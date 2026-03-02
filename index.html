@@ -1,181 +1,154 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Astra Vana Foundation</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASTRAVANA | Anshu Giri Nature Conservationist</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-body{
-margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#0f1f14;
-color:#f5f5f5;
-}
-<header style="text-align: center; padding: 50px 20px;">
-    <img src="Screenshot_20260302_152515_Gallery.jpg" alt="Astra Vana Logo" style="width: 120px; border-radius: 50%; border: 3px solid #4CAF50; margin-bottom: 20px;">
-    
-    <h1>Astra Vana Foundation</h1>
-    <p>Anshu Giri Bihar wildlife conservationist</p>
-</header>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0B1D1A;color:#fff;line-height:1.6;}
+a{text-decoration:none;color:#fff;transition:0.3s;}
+a:hover{color:#00A86B;}
 
-header{
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
-url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
-background-size:cover;
-background-position:center;
-padding:120px 20px;
-text-align:center;
-}
+header{position:fixed;width:100%;background:rgba(0,0,0,0.85);padding:15px 50px;display:flex;justify-content:space-between;align-items:center;z-index:1000;}
+header h1{color:#C6A75E;font-size:24px;letter-spacing:2px;}
+nav a{margin-left:20px;font-weight:500;font-size:14px;}
 
-header h1{
-font-size:48px;
-margin:0;
-letter-spacing:2px;
-}
+.hero{
+height:100vh;background:url('hero-bg.jpg') center/cover no-repeat;display:flex;justify-content:center;align-items:center;text-align:center;padding:20px;}
+.hero h2{font-size:45px;font-weight:800;text-shadow:2px 2px 15px black;}
+.hero p{margin-top:15px;font-size:18px;}
+.hero button{padding:12px 25px;background:#00A86B;border:none;border-radius:25px;cursor:pointer;font-weight:bold;margin-top:20px;}
+.hero button:hover{background:#00FF9D;}
 
-header p{
-font-size:20px;
-margin-top:15px;
-}
+.section{padding:100px 10%;}
+.section h2{font-size:32px;margin-bottom:30px;color:#00A86B;}
 
-section{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
-}
+.card{background:#132B26;padding:25px;border-radius:12px;margin-bottom:20px;box-shadow:0 0 20px rgba(0,255,157,0.2);}
+.stats{display:flex;flex-wrap:wrap;gap:30px;}
+.stat-box{flex:1;min-width:200px;background:#081412;padding:30px;text-align:center;border-radius:10px;}
+.stat-box h3{font-size:35px;color:#00A86B;}
 
-h2{
-color:#4caf50;
-margin-bottom:25px;
-font-size:32px;
-}
+.rescue-gallery{display:flex;flex-wrap:wrap;gap:20px;}
+.rescue-card{flex:1 1 300px;background:#132B26;padding:15px;border-radius:10px;text-align:center;}
+.rescue-card img{width:100%;border-radius:10px;}
 
-.card{
-background:#162a1d;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.5);
-margin-bottom:40px;
-}
+/* Logo section */
+.logo-section{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;align-items:center;}
+.logo-section img{height:100px;width:auto;}
 
-ul{
-line-height:32px;
-font-size:17px;
-}
+/* Upload form */
+.upload-form{background:#081412;padding:20px;border-radius:12px;margin-bottom:30px;}
+.upload-form input[type="file"]{padding:10px;}
+.upload-form input[type="submit"]{padding:10px 20px;background:#00A86B;border:none;border-radius:5px;color:#fff;font-weight:bold;cursor:pointer;}
+.upload-form input[type="submit"]:hover{background:#00FF9D;}
 
-.btn{
-display:inline-block;
-background:#4caf50;
-color:white;
-padding:14px 28px;
-text-decoration:none;
-border-radius:6px;
-margin-top:20px;
-font-weight:bold;
-}
-
-footer{
-background:#0b0f0c;
-text-align:center;
-padding:25px;
-font-size:14px;
-color:#aaa;
-}
-
-img{
-max-width:250px;
-border-radius:12px;
-margin-top:20px;
-}
+.footer{background:#000;text-align:center;padding:20px;font-size:14px;}
 </style>
 </head>
-
 <body>
 
 <header>
-<h1>Astra Vana Foundation</h1>
-<p>Defending Nature. Protecting Wildlife. Transforming Bihar’s Conservation Future.</p>
-<a href="#vision" class="btn">Discover The Mission</a>
+<div style="display:flex;align-items:center;gap:15px;">
+<img src="logo.png" alt="ASTRAVANA Logo" width="50">
+<h1>ASTRAVANA</h1>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#bio">Bio</a>
+<a href="#impact">Impact</a>
+<a href="#stories">Stories</a>
+<a href="#rescue">Rescue</a>
+<a href="#logo">Logo</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section id="vision">
-<h2>Our Vision</h2>
+<section class="hero">
+<div>
+<h2>Protecting Wildlife. Stopping Hunting. Building a Conservation Army.</h2>
+<p>Powered by <strong>The Bihar Guy</strong> | Founded by <strong>Anshu Giri</strong></p>
+<button>Join The Mission</button>
+</div>
+</section>
+
+<section id="about" class="section">
+<h2>About ASTRAVANA</h2>
 <div class="card">
-<p>
-Astra Vana Foundation envisions a Bihar where wildlife thrives without fear, 
-illegal hunting is eliminated, and communities actively participate in protecting biodiversity.
-Our mission is to build a long-term conservation movement rooted in awareness, action, and rehabilitation.
-</p>
+<p>ASTRAVANA is a grassroots wildlife conservation initiative led by Anshu Giri, known as The Bihar Guy. Operating across forests, wetlands, and communities, it focuses on anti-poaching operations, wildlife rescue, youth engagement, and public awareness programs throughout Bihar. The mission is to create a sustainable conservation culture by transforming hunters and local communities into protectors of wildlife.</p>
 </div>
 </section>
 
-<section>
-<h2>Field Story & Impact</h2>
+<section id="bio" class="section">
+<h2>Anshu Giri | Nature Conservationist</h2>
 <div class="card">
-<p>
-For over <strong>3+ years</strong>, our ground operations have been active across Bihar,
-including conservation efforts around <strong>Baba Keval Sthan</strong> and nearby rural ecosystems.
-</p>
-
-<p>
-We have successfully rehabilitated and protected numerous wildlife species,
-including owls, foxes, migratory birds, and other vulnerable animals affected by illegal hunting and habitat loss.
-</p>
-
-<p>
-Our field-based model focuses on direct rescue operations, public awareness drives,
-and youth engagement to create long-term conservation impact.
-</p>
+<p>Anshu Giri has spent over three years actively protecting wildlife in Bihar. He has conducted 20+ anti-poaching raids, rescued dozens of species including foxes, owls, nilgai, and porcupine, and implemented community awareness programs across schools and colleges. His most famous project involves foxes rehabilitated across three generations, continuously thriving in their natural habitat with active youth supervision. Anshu’s work emphasizes education, engagement, and sustainable conservation practices.</p>
 </div>
 </section>
 
-<section>
-<h2>Founder & Leadership</h2>
-<div class="card" style="text-align:center;">
-
-<h3>Anshu Giri</h3>
-<p>
-Nature Conservationist | Wildlife Conservationist <br>
-Co-Founder – Astra Vana Foundation <br>
-Field Activist & Public Awareness Speaker <br>
-Recognized as <strong>The Bihar Guy</strong>
-</p>
-
-<p>
-Driven by a commitment to protect biodiversity and defend natural ecosystems,
-Anshu Giri has dedicated his work to building a grassroots conservation movement in Bihar.
-His leadership blends field action, awareness campaigns, and wildlife rehabilitation strategies.
-</p>
-
-<img src="your-photo-link-here.jpg" alt="Anshu Giri">
-
+<section id="impact" class="section">
+<h2>Impact & Achievements</h2>
+<div class="stats">
+<div class="stat-box"><h3>20+</h3><p>Anti-Poaching Raids</p></div>
+<div class="stat-box"><h3>100+</h3><p>Wildlife Rescues</p></div>
+<div class="stat-box"><h3>50+</h3><p>School & College Awareness Programs</p></div>
+<div class="stat-box"><h3>3+</h3><p>Years of Continuous Field Work</p></div>
 </div>
 </section>
 
-<section>
-<h2>Core Areas of Work</h2>
+<section id="stories" class="section">
+<h2>Success Stories</h2>
+<div class="card"><h3>Fox Three Generation Rehab</h3><p>Rescued foxes successfully bred up to three generations, monitored regularly with youth volunteers.</p></div>
+<div class="card"><h3>Owl Protection</h3><p>Illegal owl trade disrupted; local communities educated for long-term protection.</p></div>
+<div class="card"><h3>Nilgai & Porcupine Rescue</h3><p>Multiple species rescued from traps and released safely back into the wild.</p></div>
+</section>
+
+<section id="rescue" class="section">
+<h2>Rescue Gallery</h2>
+
+<!-- Upload Form -->
+<div class="upload-form">
+<form action="upload.php" method="POST" enctype="multipart/form-data">
+<input type="file" name="rescue_image" required>
+<input type="submit" value="Upload Photo">
+</form>
+</div>
+
+<div class="rescue-gallery" id="gallery">
+<!-- Uploaded images appear here -->
+<?php
+$dir = "uploads/";
+$images = glob($dir . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+foreach($images as $img){
+    echo '<div class="rescue-card"><img src="'.$img.'" alt="Rescue Image"><p>Wildlife Rescue</p></div>';
+}
+?>
+</div>
+</section>
+
+<section id="logo" class="section">
+<h2>Our Logo & Branding</h2>
+<div class="logo-section">
+<img src="logo1.png" alt="ASTRAVANA Logo 1">
+<img src="logo2.png" alt="ASTRAVANA Logo 2">
+<img src="logo3.png" alt="ASTRAVANA Logo 3">
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact ASTRAVANA</h2>
 <div class="card">
-<ul>
-<li>✔ Wildlife Rescue & Rehabilitation Operations</li>
-<li>✔ Anti-Hunting Awareness & Field Interventions</li>
-<li>✔ Owl, Fox & Migratory Bird Protection Programs</li>
-<li>✔ School & College Conservation Campaigns</li>
-<li>✔ Community-Based Nature Protection Initiatives</li>
-</ul>
+<p>Email: <strong>astravanaaekj@gmail.com</strong></p>
+<p>We welcome inquiries from partners, volunteers, and supporters. Please reach out for collaborations or reporting wildlife incidents.</p>
 </div>
 </section>
 
-<section style="text-align:center;">
-<h2>Join The Movement</h2>
-<p>
-Support the mission to safeguard Bihar’s wildlife and strengthen the future of nature conservation.
-</p>
-<a href="mailto:yourgmail@gmail.com" class="btn">Contact & Collaborate</a>
-</section>
-
-<footer>
-© 2026 Astra Vana Foundation | Represented by The Bihar Guy | Bihar, India
+<footer class="footer">
+© 2026 ASTRAVANA | Anshu Giri Nature Conservationist | All Rights Reserved
 </footer>
 
 </body>
