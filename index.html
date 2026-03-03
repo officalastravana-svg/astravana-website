@@ -4,57 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ASTRAVANA | Anshu Giri Nature Conservationist</title>
-
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#0B1D1A;color:#fff;line-height:1.6;}
-a{text-decoration:none;color:#fff;transition:0.3s;}
+body{background:#fff;color:#0B1D1A;line-height:1.6;}
+a{text-decoration:none;color:#0B1D1A;}
 a:hover{color:#00A86B;}
 
-header{position:fixed;width:100%;background:rgba(0,0,0,0.85);padding:15px 50px;display:flex;justify-content:space-between;align-items:center;z-index:1000;}
-header h1{color:#C6A75E;font-size:24px;letter-spacing:2px;}
+/* Header */
+header{position:fixed;width:100%;background:#fff;display:flex;justify-content:space-between;align-items:center;padding:15px 50px;box-shadow:0 2px 10px rgba(0,0,0,0.1);z-index:1000;}
+header h1{font-size:22px;color:#0B1D1A;}
 nav a{margin-left:20px;font-weight:500;font-size:14px;}
 
-.hero{
-height:100vh;background:url('hero-bg.jpg') center/cover no-repeat;display:flex;justify-content:center;align-items:center;text-align:center;padding:20px;}
-.hero h2{font-size:45px;font-weight:800;text-shadow:2px 2px 15px black;}
-.hero p{margin-top:15px;font-size:18px;}
-.hero button{padding:12px 25px;background:#00A86B;border:none;border-radius:25px;cursor:pointer;font-weight:bold;margin-top:20px;}
+/* Hero Section */
+.hero{height:100vh;background:url('hero-bg.jpg') center/cover no-repeat;display:flex;justify-content:center;align-items:center;text-align:center;padding:20px;color:#fff;}
+.hero h2{font-size:48px;font-weight:800;text-shadow:2px 2px 20px rgba(0,0,0,0.5);}
+.hero p{margin-top:15px;font-size:20px;}
+.hero button{padding:12px 25px;background:#00A86B;border:none;border-radius:25px;cursor:pointer;font-weight:bold;margin-top:20px;color:#fff;}
 .hero button:hover{background:#00FF9D;}
 
+/* Sections */
 .section{padding:100px 10%;}
-.section h2{font-size:32px;margin-bottom:30px;color:#00A86B;}
+.section h2{font-size:36px;margin-bottom:30px;color:#00A86B;}
 
-.card{background:#132B26;padding:25px;border-radius:12px;margin-bottom:20px;box-shadow:0 0 20px rgba(0,255,157,0.2);}
-.stats{display:flex;flex-wrap:wrap;gap:30px;}
-.stat-box{flex:1;min-width:200px;background:#081412;padding:30px;text-align:center;border-radius:10px;}
-.stat-box h3{font-size:35px;color:#00A86B;}
+/* Cards */
+.card{background:#f5f5f5;padding:25px;border-radius:12px;margin-bottom:20px;box-shadow:0 0 20px rgba(0,168,107,0.2);}
+.card img{width:100%;border-radius:12px;cursor:pointer;}
+.card p{margin-top:10px;}
 
+/* Modal */
+.modal{display:none;position:fixed;z-index:10000;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.8);}
+.modal-content{background-color:#fff;margin:auto;padding:20px;border-radius:10px;width:80%;max-width:900px;position:relative;}
+.close{color:#aaa;position:absolute;top:10px;right:20px;font-size:28px;font-weight:bold;cursor:pointer;}
+.close:hover{color:#000;}
+
+/* Rescue Gallery */
 .rescue-gallery{display:flex;flex-wrap:wrap;gap:20px;}
-.rescue-card{flex:1 1 300px;background:#132B26;padding:15px;border-radius:10px;text-align:center;}
-.rescue-card img{width:100%;border-radius:10px;}
+.rescue-card{flex:1 1 300px;background:#f5f5f5;padding:15px;border-radius:10px;text-align:center;box-shadow:0 0 10px rgba(0,0,0,0.1);}
+.rescue-card img{width:100%;border-radius:10px;cursor:pointer;}
 
-/* Logo section */
-.logo-section{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;align-items:center;}
-.logo-section img{height:100px;width:auto;}
-
-/* Upload form */
-.upload-form{background:#081412;padding:20px;border-radius:12px;margin-bottom:30px;}
+/* Upload Form */
+.upload-form{background:#e5e5e5;padding:20px;border-radius:12px;margin-bottom:30px;}
 .upload-form input[type="file"]{padding:10px;}
 .upload-form input[type="submit"]{padding:10px 20px;background:#00A86B;border:none;border-radius:5px;color:#fff;font-weight:bold;cursor:pointer;}
 .upload-form input[type="submit"]:hover{background:#00FF9D;}
 
-.footer{background:#000;text-align:center;padding:20px;font-size:14px;}
+/* Footer */
+footer{background:#0B1D1A;color:#fff;text-align:center;padding:20px;font-size:14px;}
 </style>
 </head>
 <body>
 
 <header>
 <div style="display:flex;align-items:center;gap:15px;">
-<img src="logo.png" alt="ASTRAVANA Logo" width="50">
+<img src="logo-small.png" alt="ASTRAVANA Logo" width="50">
 <h1>ASTRAVANA</h1>
 </div>
 <nav>
@@ -63,14 +67,13 @@ height:100vh;background:url('hero-bg.jpg') center/cover no-repeat;display:flex;j
 <a href="#impact">Impact</a>
 <a href="#stories">Stories</a>
 <a href="#rescue">Rescue</a>
-<a href="#logo">Logo</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
 <div>
-<h2>Protecting Wildlife. Stopping Hunting. Building a Conservation Army.</h2>
+<h2>Protecting Wildlife. Stopping Hunting.</h2>
 <p>Powered by <strong>The Bihar Guy</strong> | Founded by <strong>Anshu Giri</strong></p>
 <button>Join The Mission</button>
 </div>
@@ -79,38 +82,54 @@ height:100vh;background:url('hero-bg.jpg') center/cover no-repeat;display:flex;j
 <section id="about" class="section">
 <h2>About ASTRAVANA</h2>
 <div class="card">
-<p>ASTRAVANA is a grassroots wildlife conservation initiative led by Anshu Giri, known as The Bihar Guy. Operating across forests, wetlands, and communities, it focuses on anti-poaching operations, wildlife rescue, youth engagement, and public awareness programs throughout Bihar. The mission is to create a sustainable conservation culture by transforming hunters and local communities into protectors of wildlife.</p>
+<p>ASTRAVANA is a grassroots wildlife conservation initiative led by Anshu Giri. It focuses on anti-poaching operations, wildlife rescue, youth engagement, and public awareness programs across Bihar. The mission is to create a sustainable conservation culture by transforming hunters and communities into wildlife protectors.</p>
 </div>
 </section>
 
 <section id="bio" class="section">
 <h2>Anshu Giri | Nature Conservationist</h2>
 <div class="card">
-<p>Anshu Giri has spent over three years actively protecting wildlife in Bihar. He has conducted 20+ anti-poaching raids, rescued dozens of species including foxes, owls, nilgai, and porcupine, and implemented community awareness programs across schools and colleges. His most famous project involves foxes rehabilitated across three generations, continuously thriving in their natural habitat with active youth supervision. Anshu’s work emphasizes education, engagement, and sustainable conservation practices.</p>
+<p>Anshu Giri has spent over three years actively protecting wildlife in Bihar. He has conducted 20+ anti-poaching raids, rescued dozens of species including foxes, owls, nilgai, and porcupine, and implemented community awareness programs across schools and colleges. His most famous project involves foxes rehabilitated across three generations, continuously thriving in their natural habitat with active youth supervision.</p>
 </div>
 </section>
 
 <section id="impact" class="section">
 <h2>Impact & Achievements</h2>
-<div class="stats">
-<div class="stat-box"><h3>20+</h3><p>Anti-Poaching Raids</p></div>
-<div class="stat-box"><h3>100+</h3><p>Wildlife Rescues</p></div>
-<div class="stat-box"><h3>50+</h3><p>School & College Awareness Programs</p></div>
-<div class="stat-box"><h3>3+</h3><p>Years of Continuous Field Work</p></div>
+<div class="card">
+<ul>
+<li>20+ Anti-Poaching Raids</li>
+<li>100+ Wildlife Rescues</li>
+<li>50+ School & College Awareness Programs</li>
+<li>3+ Years of Continuous Field Work</li>
+</ul>
 </div>
 </section>
 
 <section id="stories" class="section">
 <h2>Success Stories</h2>
-<div class="card"><h3>Fox Three Generation Rehab</h3><p>Rescued foxes successfully bred up to three generations, monitored regularly with youth volunteers.</p></div>
-<div class="card"><h3>Owl Protection</h3><p>Illegal owl trade disrupted; local communities educated for long-term protection.</p></div>
-<div class="card"><h3>Nilgai & Porcupine Rescue</h3><p>Multiple species rescued from traps and released safely back into the wild.</p></div>
+<div class="card">
+<img src="fox-thumb.jpg" alt="Fox Story" onclick="openModal('modal1')">
+<p>Fox Three Generation Rehabilitation</p>
+<button onclick="openModal('modal1')">Get Details</button>
+</div>
+
+<div class="modal" id="modal1">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal1')">&times;</span>
+<h3>Fox Three Generation Rehabilitation</h3>
+<p>Rescued foxes successfully bred up to three generations, monitored regularly with youth volunteers. This story represents sustainable conservation efforts in Bihar.</p>
+<video width="100%" controls>
+<source src="fox-video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+
 </section>
 
 <section id="rescue" class="section">
 <h2>Rescue Gallery</h2>
 
-<!-- Upload Form -->
 <div class="upload-form">
 <form action="upload.php" method="POST" enctype="multipart/form-data">
 <input type="file" name="rescue_image" required>
@@ -118,24 +137,14 @@ height:100vh;background:url('hero-bg.jpg') center/cover no-repeat;display:flex;j
 </form>
 </div>
 
-<div class="rescue-gallery" id="gallery">
-<!-- Uploaded images appear here -->
+<div class="rescue-gallery">
 <?php
 $dir = "uploads/";
 $images = glob($dir . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
 foreach($images as $img){
-    echo '<div class="rescue-card"><img src="'.$img.'" alt="Rescue Image"><p>Wildlife Rescue</p></div>';
+    echo '<div class="rescue-card"><img src="'.$img.'" alt="Rescue Image"></div>';
 }
 ?>
-</div>
-</section>
-
-<section id="logo" class="section">
-<h2>Our Logo & Branding</h2>
-<div class="logo-section">
-<img src="logo1.png" alt="ASTRAVANA Logo 1">
-<img src="logo2.png" alt="ASTRAVANA Logo 2">
-<img src="logo3.png" alt="ASTRAVANA Logo 3">
 </div>
 </section>
 
@@ -147,9 +156,14 @@ foreach($images as $img){
 </div>
 </section>
 
-<footer class="footer">
+<footer>
 © 2026 ASTRAVANA | Anshu Giri Nature Conservationist | All Rights Reserved
 </footer>
+
+<script>
+function openModal(id){document.getElementById(id).style.display='block';}
+function closeModal(id){document.getElementById(id).style.display='none';}
+</script>
 
 </body>
 </html>
