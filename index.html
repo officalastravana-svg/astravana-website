@@ -1,35 +1,41 @@
-<?php
-$uploadDir = "uploads/";
-if (!file_exists($uploadDir)) {
-    mkdir($uploadDir, 0777, true);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASTRAVANA Foundation | Wildlife Conservation</title>
+
+<title>ASTRAVANA Foundation | Wildlife Rescue & Conservation</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{background:#ffffff;color:#111;line-height:1.6;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+line-height:1.6;
+}
 
 /* HEADER */
+
 header{
 position:fixed;
 top:0;
 width:100%;
-background:#fff;
+background:#111;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:18px 60px;
-box-shadow:0 2px 20px rgba(0,0,0,0.06);
 z-index:1000;
 }
 
@@ -39,33 +45,24 @@ align-items:center;
 }
 
 .logo-area img{
-height:50px;
-width:50px;
-border-radius:50%;
-object-fit:cover;
-margin-right:12px;
-}
-
-.logo-area h1{
-font-size:20px;
-font-weight:700;
-letter-spacing:1px;
+height:45px;
+margin-right:10px;
 }
 
 nav a{
 margin-left:25px;
 text-decoration:none;
-color:#111;
+color:#fff;
 font-size:14px;
-font-weight:500;
 transition:0.3s;
 }
 
 nav a:hover{
-color:#0a8754;
+color:#2ecc71;
 }
 
 /* HERO */
+
 .hero{
 height:100vh;
 background:url('hero.jpg') center/cover no-repeat;
@@ -73,14 +70,12 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:#fff;
 padding:20px;
 }
 
 .hero h2{
-font-size:50px;
+font-size:48px;
 font-weight:800;
-text-shadow:0 5px 30px rgba(0,0,0,0.6);
 }
 
 .hero p{
@@ -89,22 +84,17 @@ font-size:20px;
 }
 
 .hero button{
-margin-top:25px;
+margin-top:20px;
 padding:14px 30px;
 border:none;
-background:#0a8754;
+background:#2ecc71;
 color:#fff;
 border-radius:30px;
-font-weight:600;
 cursor:pointer;
-transition:0.3s;
 }
 
-.hero button:hover{
-background:#0f9d6e;
-}
+/* SECTION */
 
-/* SECTIONS */
 .section{
 padding:120px 10%;
 }
@@ -112,26 +102,23 @@ padding:120px 10%;
 .section h2{
 font-size:36px;
 margin-bottom:40px;
-color:#0a8754;
+color:#2ecc71;
 }
 
-/* CARDS */
+/* GRID */
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
 
+/* CARD */
+
 .card{
-background:#fff;
-box-shadow:0 5px 25px rgba(0,0,0,0.06);
+background:#151515;
 border-radius:15px;
 overflow:hidden;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
 }
 
 .card img{
@@ -145,205 +132,193 @@ padding:20px;
 }
 
 .card-content h3{
-font-size:18px;
 margin-bottom:10px;
-}
-
-.card-content p{
-font-size:14px;
-color:#555;
-margin-bottom:15px;
 }
 
 .card-content button{
 padding:10px 20px;
+background:#2ecc71;
 border:none;
-background:#0a8754;
 color:#fff;
 border-radius:20px;
 cursor:pointer;
 }
 
-/* MODAL */
-.modal{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.7);
-justify-content:center;
-align-items:center;
-z-index:2000;
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+gap:40px;
+text-align:center;
 }
 
-.modal-content{
-background:#fff;
-width:80%;
-max-width:900px;
-padding:30px;
-border-radius:15px;
-position:relative;
-}
-
-.modal-content video{
-width:100%;
-margin-top:20px;
-border-radius:10px;
-}
-
-.close{
-position:absolute;
-right:20px;
-top:15px;
-font-size:28px;
-cursor:pointer;
-}
-
-/* UPLOAD */
-.upload-box{
-background:#f5f5f5;
-padding:30px;
-border-radius:15px;
-margin-bottom:40px;
-}
-
-.upload-box input[type="file"]{
-padding:10px;
-}
-
-.upload-box input[type="submit"]{
-padding:10px 20px;
-border:none;
-background:#0a8754;
-color:#fff;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* RESCUE IMAGES */
-.rescue-gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
-
-.rescue-gallery img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:15px;
+.stat h3{
+font-size:40px;
+color:#2ecc71;
 }
 
 /* FOOTER */
+
 footer{
-background:#111;
-color:#fff;
 text-align:center;
-padding:25px;
+padding:40px;
+background:#111;
+margin-top:80px;
 }
 
-@media(max-width:768px){
-.hero h2{font-size:32px;}
-header{padding:15px 20px;}
-}
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <div class="logo-area">
 <img src="logo.png">
 <h1>ASTRAVANA Foundation</h1>
 </div>
+
 <nav>
 <a href="#about">About</a>
 <a href="#stories">Stories</a>
 <a href="#rescue">Rescue</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
+
 <section class="hero">
+
 <div>
-<h2>Protecting Wildlife. Defending Nature.</h2>
+
+<h2>Protecting Wildlife.<br>Defending Nature.</h2>
+
 <p>Led by Anshu Giri | The Bihar Guy</p>
+
 <button>Join The Mission</button>
+
 </div>
+
 </section>
+
 
 <section id="about" class="section">
+
 <h2>About The Foundation</h2>
-<p>ASTRAVANA Foundation works on wildlife rescue, anti-poaching operations, youth awareness and community transformation across Bihar.</p>
+
+<p>
+ASTRAVANA Foundation works on wildlife rescue,
+fox rehabilitation, owl rescue and grassroots
+conservation awareness across Bihar, India.
+</p>
+
 </section>
 
+
+<section class="section">
+
+<h2>Founder</h2>
+
+<p>
+
+<strong>Anshu Giri</strong> is a grassroots wildlife rescuer
+known for rescuing foxes, owls and protecting
+wildlife in rural landscapes of Bihar.
+
+</p>
+
+</section>
+
+
 <section id="stories" class="section">
+
 <h2>Success Stories</h2>
 
 <div class="grid">
 
 <div class="card">
+
 <img src="fox.jpg">
+
 <div class="card-content">
+
 <h3>Fox Three Generation Rescue</h3>
-<p>Rehabilitated foxes across three generations successfully.</p>
+
+<p>Rehabilitated fox family across three generations.</p>
+
 <button onclick="openModal()">Get Details</button>
-</div>
+
 </div>
 
 </div>
+
+</div>
+
 </section>
 
-<div class="modal" id="storyModal">
-<div class="modal-content">
-<span class="close" onclick="closeModal()">&times;</span>
-<h2>Fox Rescue Full Story</h2>
-<p>Complete rescue story details here...</p>
-<video controls>
-<source src="fox-video.mp4" type="video/mp4">
-</video>
+
+<section class="section">
+
+<h2>Our Impact</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>120+</h3>
+<p>Animals Rescued</p>
 </div>
+
+<div class="stat">
+<h3>80+</h3>
+<p>Animals Rehabilitated</p>
 </div>
+
+<div class="stat">
+<h3>25+</h3>
+<p>Villages Reached</p>
+</div>
+
+</div>
+
+</section>
+
 
 <section id="rescue" class="section">
+
 <h2>Rescue Gallery</h2>
 
-<div class="upload-box">
-<form action="upload.php" method="POST" enctype="multipart/form-data">
-<input type="file" name="file" required>
-<input type="submit" value="Upload Rescue Photo">
-</form>
+<div class="grid">
+
+<img src="owl.jpg">
+<img src="fox.jpg">
+<img src="bird.jpg">
+
 </div>
 
-<div class="rescue-gallery">
-<?php
-$files = glob("uploads/*");
-foreach($files as $file){
-echo "<img src='$file'>";
-}
-?>
-</div>
 </section>
+
 
 <section id="contact" class="section">
+
 <h2>Contact</h2>
-<p>Email: your@email.com</p>
+
+<p>Email: astravanafoundation@gmail.com</p>
+
+<p>Location: Bihar, India</p>
+
 </section>
 
+
 <footer>
-© 2026 ASTRAVANA Foundation | All Rights Reserved
+
+<p>© 2026 ASTRAVANA Foundation</p>
+
 </footer>
 
-<script>
-function openModal(){
-document.getElementById("storyModal").style.display="flex";
-}
-function closeModal(){
-document.getElementById("storyModal").style.display="none";
-}
-</script>
-
 </body>
+
 </html>
